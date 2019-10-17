@@ -1,10 +1,15 @@
 package dolla;
 
+import dolla.task.Entry;
 import dolla.task.DebtList;
 import dolla.task.EntryList;
+import dolla.task.Log;
 import dolla.task.LogList;
 
 import java.util.ArrayList;
+
+import static dolla.Storage.getDebtsFromSave;
+import static dolla.Storage.getEntriesFromSave;
 
 public class DollaData {
 
@@ -12,12 +17,11 @@ public class DollaData {
     private EntryList entryList; // TODO: Find out alternatives to using a public variable
     private DebtList debtList;
 
-    //private EntryList entryList;
-
     public DollaData() {
-        this.entryList = new EntryList(new ArrayList<Log>());
-        // this.entryList = new EntryList(importEntryList()); TODO: Import from save file
-        this.debtList = new DebtList(new ArrayList<Log>());
+ //       this.entryList = new EntryList(new ArrayList<Log>());
+         this.entryList = new EntryList(getEntriesFromSave()); //Import from save file
+//        this.limitList = new LimitList(getLimitsFromSave()); //Import from save file
+        this.debtList = new DebtList(getDebtsFromSave()); //Import from save file
     }
 
     /**
