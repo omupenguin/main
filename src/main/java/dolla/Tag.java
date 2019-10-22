@@ -1,8 +1,5 @@
 package dolla;
 
-/**
- * Package for
- */
 public class Tag {
 
     public String inputLine;

@@ -41,9 +41,9 @@ public class MainParser {
             return new SwitchModeCommand(command); // TODO
         }
 
-        if(prevCommand[0].equals("undo") && prevCommand[1].equals("1")) {
+        if (prevCommand[0].equals("undo") && prevCommand[1].equals("1")) {
             prevCommand[1] = "2";
-        } else if(prevCommand[0].equals("undo") && prevCommand[1].equals("2")) {
+        } else if (prevCommand[0].equals("undo") && prevCommand[1].equals("2")) {
             prevCommand[0] = command;
             prevCommand[1] = "1";
         } else { //not from redo
@@ -51,11 +51,14 @@ public class MainParser {
             prevCommand[1] = "1";
         }
 
-//    } else if(prevCommand[0].equals("redo") && prevCommand[1].equals("1")) {
-//        prevCommand[1] = "2";
-//    } else if(prevCommand[0].equals("redo") || prevCommand[1].equals("2")) {
-//        prevCommand[0] = command;
-//        prevCommand[1] = "1";
+        /*
+        } else if(prevCommand[0].equals("redo") && prevCommand[1].equals("1")) {
+            prevCommand[1] = "2";
+        } else if(prevCommand[0].equals("redo") || prevCommand[1].equals("2")) {
+            prevCommand[0] = command;
+            prevCommand[1] = "1";
+
+        */
 
         Tag tag = new Tag(inputLine);
 

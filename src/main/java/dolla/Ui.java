@@ -97,7 +97,7 @@ public abstract class Ui {
         System.out.println(line);
     }
 
-    public static void echoRemove (String log) {
+    public static void echoRemove(String log) {
         System.out.println(line);
         System.out.println("Noted. I've removed this log: ");
         System.out.println(log);
@@ -351,41 +351,46 @@ public abstract class Ui {
         }
     }
 
-
-        public static void printSortedList(ArrayList<Log> list, String type){
-            System.out.println(line);
-            if (type.equals("date")) {
-                System.out.println("sorting date.........");
-            } else if (type.equals("description")) {
-                System.out.println("sorting description.........");
-            } else if (type.equals("name")) {
-                System.out.println("sorting name.........");
-            }
-
-            for (int i = 0; i < list.size(); i++) {
-                int listNum = i + 1;
-                System.out.println("\t" + listNum + ". " + list.get(i).getLogText());
-            }
+    public static void printSortedList(ArrayList<Log> list, String type) {
+        System.out.println(line);
+        if (type.equals("date")) {
+            System.out.println("sorting date.........");
+        } else if (type.equals("description")) {
+            System.out.println("sorting description.........");
+        } else if (type.equals("name")) {
+            System.out.println("sorting name.........");
         }
 
-        public static void printInvalidModifyFormatError() {
-            System.out.println(line);
-            System.out.println("\tplease follow the format "
-                    + "'modify [LIST NUM]"
-                    + "");
-            System.out.println(line);
+        for (int i = 0; i < list.size(); i++) {
+            int listNum = i + 1;
+            System.out.println("\t" + listNum + ". " + list.get(i).getLogText());
         }
+    }
 
-        public static void printInitialModifyMsg() {
-            System.out.println(line);
-            System.out.println("\tWhat would you want to change this entry to?");
-            System.out.println(line);
-        }
+    /**
+     * Prints out error message when the user inputs the wrong format for 'modify' command.
+     */
+    public static void printInvalidModifyFormatError() {
+        System.out.println(line);
+        System.out.println("\tplease follow the format "
+                + "'modify [LIST NUM]"
+                + "");
+        System.out.println(line);
+    }
 
-        public static void printNoReminderMsg() {
-            System.out.println(line);
-            System.out.println("\tThere are no reminders :)");
-            System.out.println(line);
-        }
+    /**
+     * Prints a message asking what the user fpr the modified log.
+     */
+    public static void printInitialModifyMsg() {
+        System.out.println(line);
+        System.out.println("\tWhat would you want to change this entry to?");
+        System.out.println(line);
+    }
+
+    public static void printNoReminderMsg() {
+        System.out.println(line);
+        System.out.println("\tThere are no reminders :)");
+        System.out.println(line);
+    }
 
 }

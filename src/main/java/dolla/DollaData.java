@@ -17,9 +17,12 @@ public class DollaData {
     private String prevMode;
     private int modifyIndex;
 
+    /**
+     * Creates an instance of DollaDota to store and manipulate data.
+     */
     public DollaData() {
- //       this.entryList = new EntryList(new ArrayList<Log>());
-         this.entryList = new EntryList(getEntriesFromSave()); //Import from save file
+        //this.entryList = new EntryList(new ArrayList<Log>());
+        this.entryList = new EntryList(getEntriesFromSave()); //Import from save file
         this.limitList = new LimitList(getLimitsFromSave()); //Import from save file
         this.debtList = new DebtList(getDebtsFromSave()); //Import from save file
     }
@@ -75,12 +78,17 @@ public class DollaData {
         }
     }
 
+    /**
+     * Changes the content of a particular log in list to the specified one.
+     * @param newLog The new log to replace the current item on the list.
+     */
     public void modifyLogList(Log newLog) {
         if (prevMode.equals("entry")) {
             entryList.removeFromList(modifyIndex);
             entryList.addWithIndex(modifyIndex, newLog);
         }
     }
+
     public String getMode() {
         return mode;
     }

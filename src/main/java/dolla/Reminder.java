@@ -16,11 +16,11 @@ public class Reminder {
     protected LocalDate today;
     private String mode;
 
-    public Reminder (String mode) {
+    public Reminder(String mode) {
         this.mode = "debt";
     }
 
-    public void showReminder (DollaData dollaData) {
+    public void showReminder(DollaData dollaData) {
         LogList logList = new LogList(new ArrayList<>());
         logList = dollaData.getLogList(mode);
         today = LocalDate.now();
