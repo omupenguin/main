@@ -10,6 +10,7 @@ import dolla.model.ShortcutList;
 
 import java.util.ArrayList;
 
+//@@author omupenguin
 public class DollaDataStub0 extends DollaData {
 
     private String mode = MODE_DOLLA;

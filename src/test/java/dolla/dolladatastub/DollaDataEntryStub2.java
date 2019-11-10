@@ -12,6 +12,7 @@ import dolla.model.ShortcutList;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+//@@author omupenguin
 public class DollaDataEntryStub2 extends DollaData {
 
     private Entry createNewEntry1() {

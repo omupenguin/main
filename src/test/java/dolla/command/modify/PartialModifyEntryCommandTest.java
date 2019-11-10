@@ -11,6 +11,7 @@ import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+//@@author omupenguin
 public class PartialModifyEntryCommandTest implements ModeStringList {
 
     @Test

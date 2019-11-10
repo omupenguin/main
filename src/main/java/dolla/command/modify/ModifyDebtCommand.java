@@ -9,6 +9,7 @@ import dolla.model.DollaData;
 
 import java.time.LocalDate;
 
+//@@author omupenguin
 public abstract class ModifyDebtCommand extends Command {
     protected String type;
     protected String name;

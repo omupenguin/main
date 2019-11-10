@@ -10,6 +10,7 @@ import dolla.model.ShortcutList;
 
 import java.util.ArrayList;
 
+//@@author omupenguin
 public class DollaDataLimitStub1 extends DollaData implements LimitArrayListInterface {
 
     /**

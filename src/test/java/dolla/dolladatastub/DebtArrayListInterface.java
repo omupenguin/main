@@ -7,6 +7,7 @@ import dolla.parser.ParserStringList;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+//@@author omupenguin
 /**
  * Allows for quick creation of an ArrayList of debts for initialising DollaData.
  */

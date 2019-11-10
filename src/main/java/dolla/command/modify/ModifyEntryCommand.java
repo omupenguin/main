@@ -9,6 +9,7 @@ import dolla.model.EntryList;
 
 import java.time.LocalDate;
 
+//@@author omupenguin
 public abstract class ModifyEntryCommand extends Command {
     protected String type;
     protected double amount;

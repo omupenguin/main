@@ -7,6 +7,7 @@ import dolla.ui.ModifyUi;
 
 import java.time.LocalDate;
 
+//@@author omupenguin
 public class PartialModifyEntryCommand extends ModifyEntryCommand {
 
     /**

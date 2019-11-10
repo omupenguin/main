@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+//@@author omupenguin
 public class RevertFromModifyCommandTest implements ModeStringList {
 
     @Test

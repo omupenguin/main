@@ -6,6 +6,7 @@ import dolla.parser.ParserStringList;
 
 import java.util.ArrayList;
 
+//@@author omupenguin
 /**
  * Allows for quick creation of an ArrayList of limits for initialising DollaData.
  */
